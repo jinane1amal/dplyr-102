@@ -1,0 +1,25 @@
+---
+title: "finance"
+format: html
+editor: visual 
+---
+
+```{r}
+#| message: false 
+here::i_am("dplyr-102.Rproj")
+library(here)
+library(vroom)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+```
+
+## Data LOADING 
+```{r}
+#| message: false 
+clients<- vroom (here("data","client.csv"))
+accounts<- vroom (here("data","account.csv"))
+disp<- vroom (here("data","disp.csv"))
+```
+
